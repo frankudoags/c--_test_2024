@@ -30,7 +30,7 @@ struct Player {
     House houses[2]; //House_1, House_2
 };
 
-void GameConfiguration();
+void GameConfiguration(Player players[], int numOfPlayers);
 // Wale, Frank, Demitchy, Kunle
 /**
  * 1st case
@@ -47,8 +47,7 @@ void GameConfiguration();
  * Frank - House(Yellow, 4, true), House(Blue, 4, true)
  */
 
-
-void DisplayResults();
+void DisplayResults(Player players[], int numOfPlayers);
 /*
  * Results for 2 players
  * Name         House           Member
