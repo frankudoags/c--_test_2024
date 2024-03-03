@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 #ifndef _LUDO_H
@@ -10,7 +11,8 @@ enum Color
     RED,
     GREEN,
     YELLOW,
-    BLUE
+    BLUE,
+    NOCOLOR
 };
 
 struct House {

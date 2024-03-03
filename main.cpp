@@ -18,6 +18,20 @@ int main()
     } 
     while (numOfPlayers != 2 && numOfPlayers != 4);
 
+    GameConfiguration(players, numOfPlayers);
+
+    DisplayResults(players, numOfPlayers);
+
+    //reduce members
+    cout << "Reducing 1, 2, 3, 4 members from players 1, 2, 3 and 4 respectively";
+    for (int i = 0; i < numOfPlayers; i++)
+    {
+        for (int j = 0; j < 2; j++){
+            players[i].houses[j].members -= (i + 1);
+        }
+    }
+
+        DisplayResults(players, numOfPlayers);
     return 0;
 }
 
